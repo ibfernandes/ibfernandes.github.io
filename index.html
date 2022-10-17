@@ -1,40 +1,48 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Igor B. Fernandes web page </title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="js/three.js"></script>
-        <script src="js/shaders.js"></script>
-        <script src="js/seaOfStars.js"></script>
-    </head>
-    <body>
-        <menu class="top-menu inline-menu">
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="projects.html">Publications and projects</a>
-                </li>
-            </ul>
-        </menu>
-        <div class="main-wrapper">
-            <div class="intro-block">
+
+<head>
+    <meta charset="utf-8">
+    <title>Igor B. Fernandes web page </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/three.js"></script>
+    <script src="js/shaders.js"></script>
+    <script src="js/seaOfStars.js"></script>
+</head>
+
+<body>
+    <menu class="top-menu inline-menu">
+        <ul>
+            <li>
+                <a href="" class="top-menu-underline">Home</a>
+            </li>
+            <li>
+                <a href="projects.html">Publications and projects</a>
+            </li>
+        </ul>
+    </menu>
+    <div class="main-wrapper">
+        <div class="header-container">
+            <div class="header-photo-container">
                 <img class="photo" src="img/photo.jpg" />
-                <h1 class="text-huge">
-                    Hello and welcome!<br>
-                    <b>I am MSc Igor B. Fernandes</b>.
-                </h1>
             </div>
-			<p style=" text-align: justify;">
-			I've been fascinated by Computer Graphics my whole life. This fascination led me to pursue 
-			a Bachelor in Computer Science and then a Masters in Computer Science with emphasis in Computer Graphics, introducing myself into the world of research. 
-			I'm interested in volumetric light transport, path tracing, global illumination, procedural modeling, high-performance real-time 
-			rendering and other state of the art computer graphics as an art form to create such beautiful and inspiring works.
+            <div class="header-info-container">
+                <h1 class="name">Igor B. Fernandes</h1>
+                <h2 class="title">Software Engineer</h2>
+            </div>
+        </div>
+        <section>
+            <h3>About me</h3>
+            <p style=" text-align: justify;">
+                I’ve been fascinated by computers and technology for a long time. This fascination led me to pursue a
+                Bachelor in Computer Science and then a Master's program in Computer Science with emphasis in Computer Graphics,
+                introducing myself into the world of research. I’m seeking for new challenges in an effort to push
+                the industry forward.
             </p>
-            <!--<div id="renderCanvas" style="width: 100%; height: 10em;"></div>
+        </section>
+        <!--<div id="renderCanvas" style="width: 100%; height: 10em;"></div>
             <script>
             let resX = document.getElementById("renderCanvas").offsetWidth;
             let resY = document.getElementById("renderCanvas").offsetHeight;
@@ -47,52 +55,33 @@
             camera.lookAt(0,0,0);
             coreLoop();
             </script>-->
-            
-            <h2>Highlighted projects</h2>
-            <hr/>
-            <h3>Narval Game Engine</h3>
-            <p>Under active development the Narval game engine put emphasis in physically based rendering techniques using ray and path tracing. The goal is to achieve real-time results with physical foundations. It is written in C++ and OpenGL supporting multi-threaded CPU path
-                tracing, Volumetric GPU path tracing and real-time Physically Based Rendering (PBR). It features support for a Scene and Node Editor, multiple materials, 3D object files, BVH for fast traversal of primitives and many more features.
-             The github page with all the details can be found [<a href="https://github.com/ibfernandes/NarvalEngine">here</a>].</p>
-            <img src="img/nehighlight.jpg" class="highlight-img-banner"/>
-            <img src="img/ss3.jpg" class="highlight-img-items"/>
-            <img src="img/ss4.jpg" class="highlight-img-items"/>
-            <img src="img/ss9.jpg" class="highlight-img-items"/>
-            <img src="img/ss8.jpg" class="highlight-img-items"/>
-            <h3>An approximation to multiple scattering in volumetric illumination towards real-time rendering - 2019 - 2021</h3>
-            <p>  My master's work at UFRGS consisted of a perceptual analysis of volumetric rendering using the CIELAB metric. This study led to the proposition of a new real-time algorithm to approximate multiple scattering, usually only available in offline rendering, to real-time by exploring the human perceptual system to speed up computation.
-                The figure below shows a Samples Per Pixel experiment zoomed in the area
-                where we have thin details that show less convergence, thus more prone to noise. The
-                second row shows the final rendered image and the third row shows the Just Noticeable Difference (JND) between the
-                cloud above in the same column and the reference cloud with 100,000 SPP. The thesis text alongside all code and experimnents will be eventually available at my github.
-            </p>
-            <img src="img/zoomedSPP.png" class="highlight-img-banner"/>
-            <!--<h2>Featured work</h2>-->
-            <div class="footer inline-menu">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ibfernandes/">
-                            <i class="fab fa-linkedin-in fa-3x icon"></i>
-                            <span class="icon-text">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ibfernandes/">
-                            <i class="fab fa-github fa-3x icon"></i>
-                            <span class="icon-text">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:igorbf97@hotmail.com">
-                            <i class="far fa-envelope fa-3x icon"></i>
-                            <span class="icon-text">Email</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
+        <div class="footer inline-menu">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/ibfernandes/">
+                        <i class="fab fa-linkedin-in fa-2x icon"></i>
+                        <span class="icon-text">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ibfernandes/">
+                        <i class="fab fa-github fa-2x icon"></i>
+                        <span class="icon-text">GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:igorbf97@hotmail.com">
+                        <i class="far fa-envelope fa-2x icon"></i>
+                        <span class="icon-text">Email</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="credits">
-            Developed by Igor B. Fernandes.
-        </div>
-    </body>
+    </div>
+    <div class="credits">
+        Developed by Igor B. Fernandes.
+    </div>
+</body>
+
 </html>
