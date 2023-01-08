@@ -43,7 +43,7 @@ a:visited {
 
 @media (min-width: 768px) {
     .main-wrapper {
-        width: 768px;
+        width: 640px;
         margin: auto;
     }
 }
